@@ -44,7 +44,7 @@ Crea un archivo .env en la raíz del proyecto y define el puerto (por defecto us
   
 **Ejemplo de Body para crear/editar un Servicio (POST / PUT):**
 
-JSON
+```JSON
 
 {
   "name": "Consulta General",
@@ -65,7 +65,8 @@ JSON
 
 **Ejemplo de Body para registrar una Reserva (POST):**
 
-JSON
+```JSON
+
 {
   "clientName": "Carlos Mendoza",
   "clientEmail": "carlos@example.com",
