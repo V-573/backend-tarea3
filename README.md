@@ -12,34 +12,37 @@ Características
 
 ---
 
-Instalación y Uso Local
+**Instalación y Uso Local**
 
-1. **Clonar el repositorio:**
+1. Clonar el repositorio:
 2.   Instalar dependencias:
 Bash
 npm install
 3. Configurar variables de entorno:
 Crea un archivo .env en la raíz del proyecto y define el puerto (por defecto usará el 3000 si no se declara)
 
- Documentación de Endpoints:
+ **Documentación de Endpoints:**
 
 
-  1. Servicios (/api/services)
-  Método            Endpoint                Descripción
-  GET               /api/services           Obtiene todos los servicios (Soporta filtros).
-  GET               /api/services/:id       Obtiene un servicio específico por su ID.
-  POST              /api/services           Crea un nuevo servicio en el catálogo.
-  PUT               /api/services/:id       Modifica un servicio existente sin alterar su ID.
-  DELETE            /api/services/:id       Elimina un servicio del sistema.
+  **1. Servicios (/api/services)**
+| Método | Endpoint | Descripción |
+| :--- | :--- | :--- |
+| GET | /api/services | Obtiene todos los servicios (Soporta filtros). |
+| GET | /api/services/:id | Obtiene un servicio específico por su ID. |
+| POST | /api/services | Crea un nuevo servicio en el catálogo. |
+| PUT | /api/services/:id | Modifica un servicio existente sin alterar su ID. |
+| DELETE | /api/services/:id | Elimina un servicio del sistema. |
   
-  Filtros disponibles (Query Params) en GET /api/services:
+
+  
+  **Filtros disponibles (Query Params) en GET /api/services:**
   
   Puedes enviar parámetros en la URL para refinar tus búsquedas:
   Por Nombre: ?name=Limpieza (Busca coincidencias parciales sin importar mayúsculas).
   Por Categoría: ?category=odontologia (Busca por coincidencia de área).
   Por Disponibilidad: ?available=true (Filtra booleanos true o false).
   
-Ejemplo de Body para crear/editar un Servicio (POST / PUT):
+**Ejemplo de Body para crear/editar un Servicio (POST / PUT):**
 
 JSON
 
@@ -52,14 +55,17 @@ JSON
   "available": true
 }
 
-2. Reservas (/api/bookings)
-Método              Endpoint                            Descripción
-GET                 /api/bookings                       Obtiene el listado de todas las reservas históricas.
-GET                 /api/bookings/:id                   Obtiene el detalle de una reserva por su ID.
-POST                /api/bookings                       Registra una nueva reserva base.
-POST                /api/bookings/:bid/services/:sid    Añade de forma segura un servicio a una reserva.
+**2. Reservas (/api/bookings)**
 
-Ejemplo de Body para registrar una Reserva (POST):
+| Método | Endpoint   |  Descripción |      
+| :---| :--- | :--- |
+                 
+| GET     |            /api/bookings  |                     Obtiene el listado de todas las reservas históricas. |
+| GET    |             /api/bookings/:id |                  Obtiene el detalle de una reserva por su ID. |
+| POST  |              /api/bookings      |                 Registra una nueva reserva base. |
+| POST |                /api/bookings/:bid/services/:sid |   Añade de forma segura un servicio a una reserva. |
+
+**Ejemplo de Body para registrar una Reserva (POST):**
 JSON
 {
   "clientName": "Carlos Mendoza",
