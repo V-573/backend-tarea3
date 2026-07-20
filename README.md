@@ -22,7 +22,8 @@ npm install
 Crea un archivo .env en la raíz del proyecto y define el puerto (por defecto usará el 3000 si no se declara)
 
  Documentación de Endpoints:
- 
+
+
   1. Servicios (/api/services)
   Método            Endpoint                Descripción
   GET               /api/services           Obtiene todos los servicios (Soporta filtros).
