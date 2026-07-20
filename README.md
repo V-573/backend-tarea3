@@ -60,12 +60,13 @@ JSON
 | Método | Endpoint   |  Descripción |      
 | :---| :--- | :--- |
                  
-| GET     |            /api/bookings  |                     Obtiene el listado de todas las reservas históricas. |
-| GET    |             /api/bookings/:id |                  Obtiene el detalle de una reserva por su ID. |
-| POST  |              /api/bookings      |                 Registra una nueva reserva base. |
-| POST |                /api/bookings/:bid/services/:sid |   Añade de forma segura un servicio a una reserva. |
+| GET | /api/bookings | Obtiene el listado de todas las reservas históricas. |
+| GET | /api/bookings/:id | Obtiene el detalle de una reserva por su ID. |
+| POST | /api/bookings | Registra una nueva reserva base. |
+| POST | /api/bookings/:bid/services/:sid | Añade de forma segura un servicio a una reserva. |
 
 **Ejemplo de Body para registrar una Reserva (POST):**
+
 JSON
 {
   "clientName": "Carlos Mendoza",
