@@ -56,10 +56,8 @@ JSON
 }
 
 **2. Reservas (/api/bookings)**
-
-| Método | Endpoint   |  Descripción |      
-| :---| :--- | :--- |
-                 
+| Método | Endpoint | Descripción |      
+| :---| :--- | :--- |                 
 | GET | /api/bookings | Obtiene el listado de todas las reservas históricas. |
 | GET | /api/bookings/:id | Obtiene el detalle de una reserva por su ID. |
 | POST | /api/bookings | Registra una nueva reserva base. |
