@@ -45,7 +45,6 @@ Crea un archivo .env en la raíz del proyecto y define el puerto (por defecto us
 **Ejemplo de Body para crear/editar un Servicio (POST / PUT):**
 
 ```JSON
-
 {
   "name": "Consulta General",
   "description": "Visita de diagnóstico inicial",
@@ -54,6 +53,7 @@ Crea un archivo .env en la raíz del proyecto y define el puerto (por defecto us
   "category": "Cuerpo y Mente",
   "available": true
 }
+```
 
 **2. Reservas (/api/bookings)**
 | Método | Endpoint | Descripción |      
