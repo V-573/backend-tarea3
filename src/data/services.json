@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1784577829163,
+    "name": "Limpieza Dental Básica",
+    "description": "Limpieza con ultrasonido y pulido",
+    "duration": 45,
+    "price": 50000,
+    "category": "odontologia",
+    "available": true
+  },
+  {
+    "id": 1784577871652,
+    "name": "Limpieza Dental",
+    "description": "Limpieza basica",
+    "duration": 45,
+    "price": 20000,
+    "category": "odontologia",
+    "available": true
+  }
+]

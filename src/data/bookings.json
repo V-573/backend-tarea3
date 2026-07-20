@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "clientName": "Carlos Mendoza",
+    "clientEmail": "carlos@example.com",
+    "date": "2026-07-25",
+    "status": "pendiente",
+    "time": "14:30",
+    "services": [
+      {
+        "service": 1784577829163,
+        "quantity": 1
+      }
+    ]
+  }
+]
